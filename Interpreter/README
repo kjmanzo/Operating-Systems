@@ -1,0 +1,15 @@
+README
+Katelyn Manzo
+Project 1
+Operating Systems
+Interpreter
+
+TO RUN THIS: Save the makefile and Interpreter.c and program2 to the same directory. Open terminal and find directory. Type "make" which will run the makefile which will compile the "Interpreter.c". Then run the file by typing "./Interpreter" (WITHOUT THE ".c")
+
+The file "program2" provided is the provided test fib sequence. 
+
+This program reads in a file called 'program2' and interpreters the PBrain12 assembly code in that file. (If you'd like to test the code, make/adjust a file in the same directory as the "Interpreter.c" file where the test file is named program2). If any OPCODE in the program2 file does not start with a 0, 1, 2, 3, or 9, the line is not read in.
+
+The main function loops through and reads in opcodes and performs a function call based on the OPCODE. It calls the corresponding OPCODE function with the correct parameters (using a large switchcase) and the loop runs until it reaches a "HALT" (OPCODE 99) statement.
+
+After every OPCODE in program2 has been dealt with, the main function counts the lines of memory and then prints them using the "printMEM(upto)" helper function (where upto is the count of the number of lines used in memory). 
